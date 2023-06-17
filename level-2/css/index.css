@@ -10,14 +10,14 @@ body {
 }
 
 header {
-  padding: 24px 0;
+  padding: 12px 0;
 }
 header > div#header-links {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  color: #9b9b9d;
+  color: #b8b8b8;
   font-family: "Roboto", sans-serif;
 }
 header > div#header-links a {
@@ -103,6 +103,75 @@ header > div#banner > p {
   display: none;
 }
 
+div#main-and-aside {
+  font-family: "Roboto", sans-serif;
+}
+div#main-and-aside > main {
+  padding: 12px 0;
+  background-color: #d8d7d7;
+}
+div#main-and-aside > main > div#sections-group > section {
+  margin: 0 12px;
+}
+div#main-and-aside > main > div#sections-group > section > article {
+  margin: 0 0 24px;
+  background-color: #f5f1f1;
+  padding: 12px;
+}
+div#main-and-aside > main > div#sections-group > section > article > img {
+  width: 100%;
+}
+div#main-and-aside > main > div#sections-group > section > article > h2 {
+  background-color: #f08080;
+  color: #f5f1f1;
+  margin-top: 0;
+}
+div#main-and-aside > main > div#sections-group > section > article > p {
+  -moz-column-count: 2;
+       column-count: 2;
+  margin-bottom: 0;
+}
+div#main-and-aside > main > div#sections-group > section > article > p > span {
+  -moz-column-span: all;
+       column-span: all;
+  display: block;
+  padding-top: 1rem;
+  opacity: 0.6;
+}
+div#main-and-aside > main > footer {
+  text-align: center;
+  background-color: #d8d7d7;
+  margin: 0 12px;
+}
+div#main-and-aside > aside {
+  margin: 12px 0;
+  padding: 24px 0;
+  background-color: #d8d7d7;
+}
+div#main-and-aside > aside > h3, div#main-and-aside > aside > p {
+  margin: 12px;
+  padding: 0;
+  text-align: center;
+}
+div#main-and-aside > aside > h3 {
+  margin-top: 0;
+}
+div#main-and-aside > aside > p {
+  margin-bottom: 0;
+}
+
+body > footer {
+  margin-top: 12px;
+  background-color: #d8d7d7;
+}
+body > footer > p {
+  background-color: #f5f1f1;
+  text-align: center;
+  margin: 0 12px;
+  font-size: 1rem;
+  padding: 0.8rem;
+}
+
 @media only screen and (max-width: 23.44em) {
   .img-360 {
     display: block;
@@ -160,9 +229,30 @@ header > div#banner > p {
     -o-object-fit: cover !important;
        object-fit: cover !important;
   }
+  div#sections-group {
+    display: flex;
+  }
+  div#sections-group > section {
+    flex-grow: 1;
+  }
 }
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 46.875em) {
   header > div#header-links > nav > a > span {
     display: inline;
+  }
+}
+@media only screen and (min-width: 75em) {
+  div#main-and-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  div#main-and-aside > main {
+    flex: 2;
+    margin-right: 12px;
+  }
+  div#main-and-aside > aside {
+    flex: 0.6;
+    margin: 0;
   }
 }/*# sourceMappingURL=index.css.map */

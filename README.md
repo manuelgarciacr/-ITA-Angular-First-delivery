@@ -30,3 +30,9 @@ IT Academy. Angular Course. First delivery
 
   ![image](https://github.com/manuelgarciacr/ITA-Angular-First-delivery/assets/29376434/fb0798d6-a601-464a-9993-7e19724cf481)
 
+* Exercise 5
+
+  Articles
+
+  ![image](https://github.com/manuelgarciacr/ITA-Angular-First-delivery/assets/29376434/074fdb05-dfa6-4ed4-99c5-25b0eef88176)
+
