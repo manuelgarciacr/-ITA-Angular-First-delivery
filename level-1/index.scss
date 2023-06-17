@@ -50,7 +50,6 @@ div#main-and-aside {
            >section {
                 margin: 0 24px;
                  >div {
-                    //margin: 0 24px 24px;
                     margin: 0 0 24px;
                     height: 24px;
                     background-color: #62959c;       
@@ -115,9 +114,6 @@ body>footer {
         >section {
             flex-grow: 1;
             margin: 0 0 0 24px!important;
-            //>div {
-                //margin: 0 0 24px!important;
-            //}
         }
         >section:last-of-type {
             margin-right: 24px!important;
@@ -129,4 +125,18 @@ body>footer {
 }
 
 @media only screen and (min-width: 75em) { // 1200px
+    div#main-and-aside {
+        display: flex;
+        align-items: stretch;
+        background-color: black;
+        >main {
+            flex-grow: 2;
+            margin-right: 12px;
+        }
+        >aside {
+            flex-grow: 1;
+            margin-top: 0;
+            margin-left: 12px;
+        }
+    }
 }
