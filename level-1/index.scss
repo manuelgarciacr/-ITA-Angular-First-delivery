@@ -48,8 +48,10 @@ div#main-and-aside {
         >div#sections-group {
             
            >section {
+                margin: 0 24px;
                  >div {
-                    margin: 0 24px 24px;
+                    //margin: 0 24px 24px;
+                    margin: 0 0 24px;
                     height: 24px;
                     background-color: #62959c;       
 
@@ -93,11 +95,36 @@ body>footer {
 }
 
 @media only screen and (min-width: 37.5em) { // 600px
+    header>div{
+        display: flex;
+        >div {
+            flex-grow: 4;
+            margin: 0 0 0 24px;
+        }
+        >div:first-of-type {
+            flex-grow: 1;
+        }
+        >div:last-of-type {
+            flex-grow: 1;
+            margin-right: 24px;
+        }
+    }
+
     div#sections-group {
         display: flex;
         >section {
             flex-grow: 1;
+            margin: 0 0 0 24px!important;
+            //>div {
+                //margin: 0 0 24px!important;
+            //}
         }
+        >section:last-of-type {
+            margin-right: 24px!important;
+        }
+    }
+    body>footer{
+        background-color: #e6af2e;
     }
 }
 
