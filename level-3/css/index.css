@@ -1,0 +1,303 @@
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  padding: 12px 0;
+}
+header > div#header-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: #b8b8b8;
+  font-family: "Roboto", sans-serif;
+}
+header > div#header-links a {
+  display: inline-block;
+  transition: color 0.25s, transform 0.25s, font-weight 0.25s;
+  color: #808080;
+  text-decoration-color: #808080;
+  text-decoration-line: none;
+}
+header > div#header-links a:hover {
+  cursor: pointer;
+  color: #f08080;
+  transform: translateY(-8px);
+  font-weight: 900;
+}
+header > div#header-links a:hover > i {
+  font-weight: 900;
+}
+header > div#header-links > div, header > div#header-links > nav {
+  padding: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+header > div#header-links > nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+header > div#header-links > div:first-of-type {
+  width: 5.5rem;
+  height: 5rem;
+  line-height: 5rem;
+  flex-shrink: 0;
+}
+header > div#header-links > div:first-of-type > div {
+  margin-top: 0;
+  background-image: url("../assets/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 5.5rem;
+  height: 5rem;
+  animation: logo 2s ease-out;
+}
+header > div#header-links > div:last-of-type {
+  width: 5.5rem;
+  flex-shrink: 0;
+}
+header > div#header-links > div:last-of-type > a {
+  margin-right: 1.2rem;
+}
+header > div#header-links > div:last-of-type > a:last-of-type {
+  margin-right: 0;
+}
+header > div#banner {
+  font-size: 0;
+  overflow-y: hidden;
+  height: 250px;
+}
+header > div#banner > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 2;
+  opacity: 0.9;
+  animation: banner 2s ease-out;
+}
+header > div#banner > div#shadow-id {
+  height: 124px;
+  position: relative;
+  background-color: #000000;
+  width: 85%;
+  margin: -124px auto 0;
+}
+header > div#banner > p {
+  font-size: 2rem;
+  color: orangered;
+  position: relative;
+  z-index: 4;
+  margin: -100px 0 0;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.img-360 {
+  display: none;
+}
+
+.img-1200 {
+  display: none;
+}
+
+div#main-and-aside {
+  font-family: "Roboto", sans-serif;
+}
+div#main-and-aside > main {
+  padding: 12px 0;
+  background-color: #d8d7d7;
+}
+div#main-and-aside > main > div#sections-group > section {
+  margin: 0 12px;
+}
+div#main-and-aside > main > div#sections-group > section > article {
+  margin: 0 0 24px;
+  background-color: #f5f1f1;
+  padding: 12px;
+}
+div#main-and-aside > main > div#sections-group > section > article > img {
+  width: 100%;
+}
+div#main-and-aside > main > div#sections-group > section > article > h2 {
+  background-color: #f08080;
+  color: #f5f1f1;
+  margin-top: 0;
+  padding: 0.8em 0.3em 0.2em;
+}
+div#main-and-aside > main > div#sections-group > section > article > p {
+  -moz-column-count: 2;
+       column-count: 2;
+  margin-bottom: 0;
+}
+div#main-and-aside > main > div#sections-group > section > article > p > a {
+  -moz-column-span: all;
+       column-span: all;
+  display: block;
+  padding-top: 1rem;
+  opacity: 0.6;
+  color: inherit;
+  text-decoration-color: gray;
+  text-decoration-line: none;
+}
+div#main-and-aside > main > div#sections-group > section > article > p > a:hover {
+  cursor: pointer;
+  color: #f08080;
+  transform: translateY(-8px);
+  font-weight: 900;
+}
+div#main-and-aside > main > footer {
+  text-align: center;
+  background-color: #d8d7d7;
+  margin: 0 12px;
+}
+div#main-and-aside > aside {
+  margin: 12px 0;
+  padding: 24px 0;
+  background-color: #d8d7d7;
+}
+div#main-and-aside > aside > h3, div#main-and-aside > aside > p {
+  margin: 12px;
+  padding: 0;
+  text-align: center;
+}
+div#main-and-aside > aside > h3 {
+  margin-top: 0;
+}
+div#main-and-aside > aside > p {
+  margin-bottom: 0;
+}
+
+body > footer {
+  margin-top: 12px;
+  background-color: #d8d7d7;
+}
+body > footer > p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: #f5f1f1;
+  text-align: center;
+  margin: 0 12px;
+  font-size: 1rem;
+  padding: 0.8rem;
+}
+
+@media only screen and (max-width: 23.44em) {
+  .img-360 {
+    display: block;
+  }
+  .img-600 {
+    display: none;
+  }
+  .img-1200 {
+    display: none;
+  }
+  div#banner {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  div#banner > p {
+    margin-top: -80px !important;
+    font-size: 1.4rem !important;
+    color: red !important;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  header > div#header-links > nav > a > span {
+    display: none;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  header > div#header-links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header > div#header-links > div, header > div#header-links > nav {
+    line-height: 5rem;
+    height: 5rem;
+  }
+  header > div#header-links > nav > a > span {
+    display: none;
+  }
+  header > div#header-links > div:first-of-type {
+    margin-left: 3rem;
+  }
+  header > div#header-links > div:last-of-type {
+    margin-right: 3rem;
+  }
+  .img-360 {
+    display: none;
+  }
+  .img-600 {
+    display: none;
+  }
+  .img-1200 {
+    display: block;
+  }
+  div#banner > img {
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+  }
+  div#sections-group {
+    display: flex;
+  }
+  div#sections-group > section {
+    flex-grow: 1;
+  }
+}
+@media only screen and (min-width: 46.875em) {
+  header > div#header-links > nav > a > span {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 75em) {
+  div#main-and-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  div#main-and-aside > main {
+    flex: 2;
+    margin-right: 12px;
+  }
+  div#main-and-aside > aside {
+    flex: 0.6;
+    margin: 0;
+  }
+}
+@keyframes banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  50% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 5.5rem;
+    height: 5rem;
+  }
+}/*# sourceMappingURL=index.css.map */

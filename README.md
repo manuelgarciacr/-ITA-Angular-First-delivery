@@ -36,3 +36,11 @@ IT Academy. Angular Course. First delivery
 
   ![image](https://github.com/manuelgarciacr/ITA-Angular-First-delivery/assets/29376434/074fdb05-dfa6-4ed4-99c5-25b0eef88176)
 
+## Level 3
+#
+* Exercise 6
+
+  Animation with keyframes on the title and logo
+  Bug layout very small devices
+
+
