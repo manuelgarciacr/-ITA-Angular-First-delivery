@@ -1,0 +1,103 @@
+body {
+    max-width: 1200px;
+    background-color: aquamarine;
+}
+
+header {
+    padding: 24px 0;
+    background-color: black;
+
+    >div {
+        margin: 0 24px 24px 24px;
+        padding: 24px 0;
+        background-color: #2d4059;
+
+        >div {
+            margin: 24px;
+            padding: 0;
+            height: 24px;
+            background-color: #ea5455;           
+        }
+
+        :first-of-type {
+            margin-top: 0;
+        }
+
+        :last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    >nav {
+        margin: 24px 24px 0 24px;
+        border: 24px solid #f07b3f;
+        height: 24px;
+        background-color: #fed460;
+    }
+}
+
+div#main-and-aside {
+    padding: 24px 0;
+    background-color: #fee228;
+    margin-top: 24px;
+    >main {
+        margin: 0 24px;
+        padding: 24px 0;
+        background-color: #2d4059;
+
+        >section {
+            
+            >div {
+                margin: 0 24px 24px;
+                height: 24px;
+                background-color: #62959c;       
+
+            }
+        }
+
+        >footer {
+            background-color: #a3ddcb;
+            margin: 0 24px;
+            height: 24px;
+        }
+
+    }
+
+    >aside {
+        margin: 0 24px;
+        padding: 24px 0;
+        background-color: #f07b3f;
+        >div {
+            margin: 12px 24px;
+            padding: 0;
+            height: 24px;
+            background-color: #fdb36b;           
+        }
+        :first-of-type {
+            margin-top: 0;
+        }
+
+        :last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+body>footer {
+    margin-top: 24px;
+    height: 24px;
+    border: 24px solid black;
+    background-color: #fdc764;
+}
+
+@media only screen and (min-width: 37.5em) { // 600px
+    body {
+        background-color: #fdb36b;
+    }
+}
+
+@media only screen and (min-width: 75em) { // 1200px
+    body {
+        background-color:khaki;
+    }
+}
