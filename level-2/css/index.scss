@@ -1,0 +1,200 @@
+* {
+    user-select: none;
+}
+
+body {
+    max-width: 1200px;
+    margin:  auto;
+}
+
+header {
+    padding: 24px 0;
+    //background-color: black;
+
+    >div#header-links {
+        //margin: 0 24px 24px 24px;
+        //padding: 24px 0;
+        //background-color: #2d4059;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        color: #9b9b9d;
+        font-family: 'Roboto', sans-serif;
+        a {
+            display: inline-block;
+            transition: color .25s, transform .25s, font-weight .25s;
+        }
+        a:hover {
+            cursor: pointer;
+            color: #f08080;
+            transform: translateY(-8px);
+            font-weight: bolder;           
+            >i {
+                font-weight: bolder;
+            } 
+        }
+        >div, >nav {
+            //margin: 24px;
+            padding: 0;
+            height: 2.5rem;
+            line-height: 2.5rem;        
+        }
+
+        >nav {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        >div:first-of-type {
+            margin-top: 0;
+            background-image: url("../assets/logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 5.5rem;
+            height: 5rem;
+            line-height: 5rem;
+            flex-shrink: 0;
+        }
+
+        >div:last-of-type {
+            //margin-bottom: 0;
+            width: 5.5rem;
+            flex-shrink: 0;
+            >a {
+                //line-height: 5rem;
+                //float: right;
+                //color: #9b9b9d;
+                //--fa-primary-color: #7386a5;
+                margin-right: 1.2rem;
+            }
+            >a:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+
+    >div#banner {
+        font-size: 0; // Prevent gaps between blocks
+        overflow-y: hidden; // Prevent div#shadow overflow
+        height: 250px;
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+            opacity: .9;
+        }
+        >div#shadow {
+            height: 124px;
+            position: relative;
+            background-color: #000000;
+            width: 85%;
+            margin: -124px auto 0;
+        }
+        >p {
+            font-size: 2rem;
+            color: orangered;
+            position: relative;
+            z-index: 4;
+            margin: -100px 0 0;
+            text-align: center;
+            opacity: .5;
+        }
+    }
+}
+
+.img-360 {
+    display: none;
+}
+
+.img-1200 {
+    display: none;
+}
+
+// This media query prevents the central figure 
+// displayed in the banner image from being cropped.
+@media only screen and (max-width: 23.44em) { // 375px small mobile
+
+    .img-360 {
+        display: block;
+    }
+
+    .img-600 {
+        display: none;
+    }
+
+    .img-1200 {
+        display: none;
+    }
+
+    div#banner>img {
+        height: auto!important;
+        object-fit: scale-down!important;
+    }
+
+    div#banner>p {
+        margin-top: -80px!important;
+        font-size: 1.40rem!important;
+        color: red!important;
+    }
+}
+
+// This media query prevents menu items from overlap.
+@media only screen and (max-width: 28.125em) { // 450px medium mobile
+
+    header>div#header-links>nav>a>span {
+        display: none;
+    }
+}
+
+// 600px tablet
+@media only screen and (min-width: 37.5em) { 
+
+    header>div#header-links{
+        flex-direction: row;
+        justify-content: space-between;
+        >div, >nav {
+            line-height: 5rem;
+            height: 5rem;
+        }
+
+        >nav>a>span {
+            display: none;
+        }
+
+        >div:first-of-type {
+            margin-left: 3rem;
+        }
+
+        >div:last-of-type {
+            margin-right: 3rem;;
+        }
+    }
+
+    .img-360 {
+        display: none;
+    }
+
+    .img-600 {
+        display: none;
+    }
+
+    .img-1200 {
+        display: block;
+    }
+
+    div#banner>img {
+        object-fit: cover!important;
+    }
+}
+
+// 650px medium size tablet
+@media only screen and (min-width: 43.75em) { 
+    header>div#header-links>nav>a>span {
+        display: inline;
+    }
+}

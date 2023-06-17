@@ -93,7 +93,8 @@ body>footer {
     background-color: #fdc764;
 }
 
-@media only screen and (min-width: 37.5em) { // 600px
+// 600px tablet
+@media only screen and (min-width: 37.5em) { 
     header>div{
         display: flex;
         >div {
@@ -124,7 +125,8 @@ body>footer {
     }
 }
 
-@media only screen and (min-width: 75em) { // 1200px
+// 1200px desktop
+@media only screen and (min-width: 75em) { 
     div#main-and-aside {
         display: flex;
         align-items: stretch;

@@ -1,0 +1,168 @@
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  padding: 24px 0;
+}
+header > div#header-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: #9b9b9d;
+  font-family: "Roboto", sans-serif;
+}
+header > div#header-links a {
+  display: inline-block;
+  transition: color 0.25s, transform 0.25s, font-weight 0.25s;
+}
+header > div#header-links a:hover {
+  cursor: pointer;
+  color: #f08080;
+  transform: translateY(-8px);
+  font-weight: bolder;
+}
+header > div#header-links a:hover > i {
+  font-weight: bolder;
+}
+header > div#header-links > div, header > div#header-links > nav {
+  padding: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+header > div#header-links > nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+header > div#header-links > div:first-of-type {
+  margin-top: 0;
+  background-image: url("../assets/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 5.5rem;
+  height: 5rem;
+  line-height: 5rem;
+  flex-shrink: 0;
+}
+header > div#header-links > div:last-of-type {
+  width: 5.5rem;
+  flex-shrink: 0;
+}
+header > div#header-links > div:last-of-type > a {
+  margin-right: 1.2rem;
+}
+header > div#header-links > div:last-of-type > a:last-of-type {
+  margin-right: 0;
+}
+header > div#banner {
+  font-size: 0;
+  overflow-y: hidden;
+  height: 250px;
+}
+header > div#banner > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 2;
+  opacity: 0.9;
+}
+header > div#banner > div#shadow {
+  height: 124px;
+  position: relative;
+  background-color: #000000;
+  width: 85%;
+  margin: -124px auto 0;
+}
+header > div#banner > p {
+  font-size: 2rem;
+  color: orangered;
+  position: relative;
+  z-index: 4;
+  margin: -100px 0 0;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.img-360 {
+  display: none;
+}
+
+.img-1200 {
+  display: none;
+}
+
+@media only screen and (max-width: 23.44em) {
+  .img-360 {
+    display: block;
+  }
+  .img-600 {
+    display: none;
+  }
+  .img-1200 {
+    display: none;
+  }
+  div#banner > img {
+    height: auto !important;
+    -o-object-fit: scale-down !important;
+       object-fit: scale-down !important;
+  }
+  div#banner > p {
+    margin-top: -80px !important;
+    font-size: 1.4rem !important;
+    color: red !important;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  header > div#header-links > nav > a > span {
+    display: none;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  header > div#header-links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header > div#header-links > div, header > div#header-links > nav {
+    line-height: 5rem;
+    height: 5rem;
+  }
+  header > div#header-links > nav > a > span {
+    display: none;
+  }
+  header > div#header-links > div:first-of-type {
+    margin-left: 3rem;
+  }
+  header > div#header-links > div:last-of-type {
+    margin-right: 3rem;
+  }
+  .img-360 {
+    display: none;
+  }
+  .img-600 {
+    display: none;
+  }
+  .img-1200 {
+    display: block;
+  }
+  div#banner > img {
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+  }
+}
+@media only screen and (min-width: 43.75em) {
+  header > div#header-links > nav > a > span {
+    display: inline;
+  }
+}/*# sourceMappingURL=index.css.map */

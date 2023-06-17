@@ -21,3 +21,12 @@ IT Academy. Angular Course. First delivery
   Desktop layout
   
   ![image](https://github.com/manuelgarciacr/ITA-Angular-First-delivery/assets/29376434/9ec9caa4-7f55-4d3f-aaaf-1d6857761482)
+
+## Level 2
+#
+* Exercise 4
+
+  Header
+
+  ![image](https://github.com/manuelgarciacr/ITA-Angular-First-delivery/assets/29376434/fb0798d6-a601-464a-9993-7e19724cf481)
+
