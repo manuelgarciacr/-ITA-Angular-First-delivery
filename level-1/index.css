@@ -1,6 +1,5 @@
 body {
   max-width: 1200px;
-  background-color: aquamarine;
 }
 
 header {
@@ -41,7 +40,7 @@ div#main-and-aside > main {
   padding: 24px 0;
   background-color: #2d4059;
 }
-div#main-and-aside > main > section > div {
+div#main-and-aside > main > div#sections-group > section > div {
   margin: 0 24px 24px;
   height: 24px;
   background-color: #62959c;
@@ -52,7 +51,7 @@ div#main-and-aside > main > footer {
   height: 24px;
 }
 div#main-and-aside > aside {
-  margin: 0 24px;
+  margin: 24px 24px 0;
   padding: 24px 0;
   background-color: #f07b3f;
 }
@@ -77,12 +76,10 @@ body > footer {
 }
 
 @media only screen and (min-width: 37.5em) {
-  body {
-    background-color: #fdb36b;
+  div#sections-group {
+    display: flex;
   }
-}
-@media only screen and (min-width: 75em) {
-  body {
-    background-color: khaki;
+  div#sections-group > section {
+    flex-grow: 1;
   }
 }/*# sourceMappingURL=index.css.map */

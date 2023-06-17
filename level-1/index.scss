@@ -1,6 +1,5 @@
 body {
     max-width: 1200px;
-    background-color: aquamarine;
 }
 
 header {
@@ -40,18 +39,21 @@ div#main-and-aside {
     padding: 24px 0;
     background-color: #fee228;
     margin-top: 24px;
+
     >main {
         margin: 0 24px;
         padding: 24px 0;
         background-color: #2d4059;
 
-        >section {
+        >div#sections-group {
             
-            >div {
-                margin: 0 24px 24px;
-                height: 24px;
-                background-color: #62959c;       
+           >section {
+                 >div {
+                    margin: 0 24px 24px;
+                    height: 24px;
+                    background-color: #62959c;       
 
+                }
             }
         }
 
@@ -64,7 +66,7 @@ div#main-and-aside {
     }
 
     >aside {
-        margin: 0 24px;
+        margin: 24px 24px 0;
         padding: 24px 0;
         background-color: #f07b3f;
         >div {
@@ -91,13 +93,13 @@ body>footer {
 }
 
 @media only screen and (min-width: 37.5em) { // 600px
-    body {
-        background-color: #fdb36b;
+    div#sections-group {
+        display: flex;
+        >section {
+            flex-grow: 1;
+        }
     }
 }
 
 @media only screen and (min-width: 75em) { // 1200px
-    body {
-        background-color:khaki;
-    }
 }
