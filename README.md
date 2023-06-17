@@ -8,19 +8,19 @@ IT Academy. Angular Course. First delivery
 
   Mobile layout
   
-  ![image](https://user-images.githubusercontent.com/29376434/236875025-0fe5cf58-b9f0-44d9-a9e8-4e304f433a65.png)
+  ![image](https://i.ibb.co/bP5hd2H/level1-exercise3.png)
 
 * Exercise 2
 
   Tablet layout
   
-  ![image](https://github.com/manuelgarciacr/ITA-Angular-First-delivery/assets/29376434/412d1c9a-f62f-40e8-8fe7-1c89265e0a42)
+  ![image](https://i.ibb.co/bJxSYBY/level1-exercise2.png)
 
 * Exercise 1
 
   Desktop layout
   
-  ![image](https://github.com/manuelgarciacr/ITA-Angular-First-delivery/assets/29376434/9ec9caa4-7f55-4d3f-aaaf-1d6857761482)
+  ![image](https://i.ibb.co/nDsmkz2/level1-exercise1.png)
 
 ## Level 2
 #
@@ -28,19 +28,26 @@ IT Academy. Angular Course. First delivery
 
   Header
 
-  ![image](https://github.com/manuelgarciacr/ITA-Angular-First-delivery/assets/29376434/fb0798d6-a601-464a-9993-7e19724cf481)
+  ![image](https://i.ibb.co/dKLW2LC/level2-exercise4.png)
 
 * Exercise 5
 
   Articles
 
-  ![image](https://github.com/manuelgarciacr/ITA-Angular-First-delivery/assets/29376434/074fdb05-dfa6-4ed4-99c5-25b0eef88176)
+  ![image](https://i.ibb.co/h8bJcX4/level2-exercise5.png)
 
 ## Level 3
 #
 * Exercise 6
 
-  Animation with keyframes on the title and logo
+  Animation with keyframes on the title and logo\
   Bug layout very small devices
+
+* Exercise 7
+
+  Grid layout\
+  Links noreferrer\
+  Images load lazy\
+  README.md images
 
 
